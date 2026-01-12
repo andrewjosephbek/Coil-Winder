@@ -87,7 +87,7 @@ The Driver Board is a 4 layer PCB that serves to drive the display and stepper m
 
 - The ***STM32L432KCU6*** was chosen as this projects MCU for it's low cost, low power draw, and appropriate number of GPIO ports. 
 - The ***DRV8825*** was chosen to drive this projects stepper motors for it's simple step and direction interface. It's current setting potentiometer also negates the need for a SPI current setting and interface, which saves on the number of required MCU GPIO ports.
-- The ***AZ1117C*** was chose for LCD and MCU voltage regulation, as it comes preset at 5V and 3.3V levels, which lowers the number of supporting components required on the PCB.
+- The ***AZ1117C*** was chosen for LCD and MCU voltage regulation, as it comes preset at 5V and 3.3V levels, which lowers the number of supporting components required on the PCB.
 
 All other components are standard/trivial supporting components chosen for easy hand-soldering assembly. All SMD resistors and capacitors are package size 0603 (Imperial).
 
