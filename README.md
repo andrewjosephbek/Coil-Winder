@@ -1,6 +1,6 @@
 # Coil Winder
 
-A **low-cost, precision coil winding machine** built from 3D-printed parts and off-the-shelf components, designed for sensing coils, charging coils, solenoids, and similar applications. See detialed system descriptions and methodology in **Design Docs**. 
+A **low-cost, precision coil winding machine** built from 3D-printed parts and off-the-shelf components, designed for sensing coils, charging coils, solenoids, and similar applications. See detailed system descriptions and methodology in **Design Docs**. 
 
 ---
 
