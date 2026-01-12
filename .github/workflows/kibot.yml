@@ -1,0 +1,24 @@
+name: KiBot_GitHub_Actions  # Can by any name
+on: [push, pull_request]
+jobs:
+  KiBot-Generation:  # Can be any name
+    runs-on: ubuntu-latest  # Don't change
+    container: ghcr.io/inti-cmnb/kicad7_auto:latest  # Don't Change
+
+    steps:  
+    - name: Checkout repo
+      uses: actions/checkout@v3  # Github built-in repo checkout step.
+
+    # Start of the KiBot steps
+    - name: Run KiBot
+      run: |
+        kibot -e "coilwinder.kicad_sch"
+
+    # Commit the generated files to the repo
+    - name: Commit schematic pdfs
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Generated"
+        git push
